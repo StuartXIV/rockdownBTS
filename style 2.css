@@ -225,6 +225,11 @@ li:hover .image-and-download-box {
   font-size: 98%;
 }
 
+#download-arrow:active {
+  opacity: 0.5;
+  font-size: 96%;
+}
+
 li:hover {
   background: #282828;
   color: white;
