@@ -226,8 +226,8 @@ li:hover .image-and-download-box {
 }
 
 #download-arrow:active {
-  opacity: 0.5;
-  font-size: 96%;
+  opacity: 0.9;
+  font-size: 97%;
 }
 
 li:hover {
