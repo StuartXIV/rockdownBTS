@@ -31,7 +31,6 @@ body {
   padding: 1.5em 2em;
 }
 
-
 header {
   width: 80%;
   height: 100px;
@@ -139,16 +138,17 @@ audio {
   display: flex;
   flex-direction: column;
   padding: 2em 0;
-  overflow: hidden;
+  overflow: auto;
 }
 
-/* LIST */
+/* LIST OF SONGS  -------------------------------------------------------------------------------------------------*/
 
 ul {
   list-style-type: none;
   line-height: 2em;
   font-size: 1.5rem;
   color: white;
+  overflow-x: hidden;
 }
 
 li {
@@ -207,7 +207,6 @@ li {
   width: 100%;
 }
 
-
 li .download-box {
   display: none;
 }
@@ -223,11 +222,6 @@ li:hover .image-and-download-box {
 #download-arrow:hover {
   opacity: 0.5;
   font-size: 98%;
-}
-
-#download-arrow:active {
-  opacity: 0.9;
-  font-size: 97%;
 }
 
 li:hover {
@@ -252,6 +246,7 @@ li:active .inner-list {
   opacity: 0.9;
   font-weight: 400;
   padding: 30px 0;
+  text-align: center;
 }
 
 .song-title h2 {
@@ -261,7 +256,6 @@ li:active .inner-list {
 /* LAPTOP SCREEN */
 
 @media screen and (max-width: 1500px) {
-
   .wrapper {
     width: 100%;
   }
@@ -307,8 +301,7 @@ li:active .inner-list {
     padding: 40px 0;
   }
 
- @media screen and (max-width: 330px) {   
-
+  @media screen and (max-width: 330px) {
     header {
       width: 100%;
     }
@@ -370,7 +363,7 @@ li:active .inner-list {
     }
 
     .image-and-download-box {
-      justify-content:space-between; 
+      justify-content: space-between;
     }
 
     .player {
@@ -387,7 +380,5 @@ li:active .inner-list {
       padding: 10px;
       line-height: 0;
     }
-    
   }
-
 }

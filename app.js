@@ -13,9 +13,11 @@ function reseticon(){
     document.querySelector("#song6 i").className = "far fa-play-circle";
     document.querySelector("#song7 i").className = "far fa-play-circle";
     document.querySelector("#song8 i").className = "far fa-play-circle";
+    document.querySelector("#song9 i").className = "far fa-play-circle";    
+    document.querySelector("#song10 i").className = "far fa-play-circle";
 }
 
-const arr = ["Crazy In Love", "Come On Eileen", "Shut Up and Dance", "You Make My Dreams", "We Found Love", "Old Town Road", "Good as Hell", "Happy"];
+const arr = ["Crazy In Love", "Come On Eileen", "Shut Up and Dance", "You Make My Dreams", "We Found Love", "Old Town Road", "Good as Hell", "Happy", "Dancing In The Moonlight", "Uptown Funk"];
 
 function play(x){
     audio.play();
@@ -122,6 +124,24 @@ document.getElementById("song8").addEventListener("click", function(){
     play_state ? reset(song) : play(song); 
     image.src = "./images/happy.jpg"; 
     songTitle.innerHTML = "Happy";
+});
+
+document.getElementById("song9").addEventListener("click", function(){
+    reseticon();     
+    const song = "#song9 i";    
+    audio.src = "./music/Dancing In The Moonlight BT.mp3";     
+    play_state ? reset(song) : play(song); 
+    image.src = "./images/dancing in the moonlight.jpg"; 
+    songTitle.innerHTML = "Dancing In The Moonlight";
+});
+
+document.getElementById("song10").addEventListener("click", function(){
+    reseticon();     
+    const song = "#song10 i";    
+    audio.src = "./music/Uptown Funk BT New.mp3";     
+    play_state ? reset(song) : play(song); 
+    image.src = "./images/uptown funk.jpg"; 
+    songTitle.innerHTML = "Uptown Funk";
 });
 
 
